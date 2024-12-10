@@ -92,4 +92,4 @@ Contributions are welcome! Feel free to submit a pull request or open an issue t
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 💡 Author
-Created by [Your Name]. Reach out to me on LinkedIn or GitHub for feedback or collaboration!
+Created by Csilla Toth. Reach out to me on LinkedIn or GitHub for feedback or collaboration!
