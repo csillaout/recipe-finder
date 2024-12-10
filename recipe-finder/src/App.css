@@ -1,0 +1,47 @@
+.full-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -50px;
+}
+
+p {
+  max-width: 70%;
+}
+
+.food {
+  font-size: 50px;
+}
+
+.carousel {
+  margin-bottom: 25px;
+  padding: 5px;
+  width: 50%;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.carousel-content {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.emoji {
+  font-size: 3rem;
+  padding: 0 1rem;
+  min-width: 100px;
+  text-align: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

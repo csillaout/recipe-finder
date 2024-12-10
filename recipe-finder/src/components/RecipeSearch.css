@@ -1,0 +1,71 @@
+input {
+  padding: 12px;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+}
+
+input:focus {
+  border-color: #388e3c; /* Adjusted green for hover */
+  outline: none;
+  box-shadow: 0 4px 10px rgba(56, 142, 60, 0.2); /* Lighter green shadow on hover */
+  color: white;
+}
+
+input:hover {
+  border-color: #388e3c; /* Adjusted green for hover */
+  background-color: #56b959;
+  box-shadow: 0 4px 10px rgba(56, 142, 60, 0.2); /* Lighter green shadow on hover */
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+input:hover::placeholder {
+  color: white; /* Change placeholder text to white on hover */
+}
+
+button {
+  padding: 12px;
+  border: 2px solid #4caf50; /* Green border to match input */
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:focus {
+  border-color: #388e3c; /* Adjusted green for focus */
+  outline: none;
+  box-shadow: 0 4px 10px rgba(56, 142, 60, 0.2); /* Lighter green shadow */
+  background-color: #f5f5ff; /* Soft background on focus */
+}
+
+button:hover {
+  border-color: #388e3c; /* Adjusted green for hover */
+  background-color: #56b959;
+  box-shadow: 0 4px 10px rgba(56, 142, 60, 0.2); /* Lighter green shadow on hover */
+  color: white;
+}
+
+button:disabled {
+  border-color: #ccc;
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

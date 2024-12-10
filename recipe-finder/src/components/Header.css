@@ -1,0 +1,27 @@
+.header {
+  background-color: #4caf50;
+  padding: 2rem;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
