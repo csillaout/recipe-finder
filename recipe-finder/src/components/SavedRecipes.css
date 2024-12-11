@@ -1,0 +1,104 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* Saved Recipes Container */
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.recipes ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+/* Saved Recipe Card */
+.recipe-card {
+  background: #c5d6c6;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  flex: 1 1 calc(30% - 1rem); /* Adjusts to 3 cards per row */
+  max-width: calc(30% - 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Recipe Title */
+.recipe-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Recipe Image */
+.recipe-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Recipe Links */
+.recipe-card a {
+  text-decoration: none;
+  color: #4caf50;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.recipe-card a:hover {
+  color: #0f2110;
+}
+
+/* More Info Button */
+.recipe-card button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.recipe-card button:hover {
+  background-color: #204622;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recipe-card {
+    flex: 1 1 calc(45% - 1rem); /* Adjust to 2 cards per row */
+    max-width: calc(45% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-card {
+    flex: 1 1 calc(100% - 1rem); /* Adjust to 1 card per row */
+    max-width: calc(100% - 1rem);
+  }
+}

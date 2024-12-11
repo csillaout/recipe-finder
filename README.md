@@ -83,6 +83,7 @@ allow_origins=["http://localhost:3000"], # Adjust as needed
 allow_methods=["*"],
 allow_headers=["*"],
 )
+
 🙌 Contributions
 
 Contributions are welcome! Feel free to submit a pull request or open an issue to suggest features or report bugs.

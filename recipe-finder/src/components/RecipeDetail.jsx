@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
+import "./RecipeDetail.css"; // Import the CSS file
 
 const RecipeDetail = () => {
   const { id } = useParams();
@@ -24,7 +25,7 @@ const RecipeDetail = () => {
   }
 
   return (
-    <div>
+    <div class="recipedetail">
       <h1>{recipe.title}</h1>
       {recipe.image && <img src={recipe.image} alt={recipe.title} />}
       <h2>Ingredients</h2>
