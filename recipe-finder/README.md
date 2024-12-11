@@ -43,7 +43,6 @@ The frontend will be available at http://localhost:3000.
 
 recipe-finder/
 ├── backend/
-<<<<<<< HEAD
 │ ├── main.py # FastAPI backend application
 │ ├── requirements.txt # Backend dependencies
 │ └── ...
@@ -54,18 +53,6 @@ recipe-finder/
 │ │ ├── App.js # Main React app
 │ │ └── ...
 │ └── package.json # Frontend dependencies
-=======
-│   ├── main.py                # FastAPI backend application
-│   ├── requirements.txt       # Backend dependencies
-│   └── ...
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/        # React components
-│   │   ├── App.js             # Main React app
-│   │   └── ...
-│   └── package.json           # Frontend dependencies
->>>>>>> d02d7279aa25675c7994dfa3e3853fcae1e1524b
 └── README.md
 🔑 API Keys
 
@@ -91,20 +78,11 @@ CORS Issues: If the browser blocks API requests due to CORS, configure FastAPI t
 from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
-<<<<<<< HEAD
 CORSMiddleware,
 allow_origins=["http://localhost:3000"], # Adjust as needed
 allow_methods=["*"],
 allow_headers=["*"],
 )
-
-=======
-    CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Adjust as needed
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
->>>>>>> d02d7279aa25675c7994dfa3e3853fcae1e1524b
 🙌 Contributions
 
 Contributions are welcome! Feel free to submit a pull request or open an issue to suggest features or report bugs.
@@ -114,14 +92,4 @@ Contributions are welcome! Feel free to submit a pull request or open an issue t
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 💡 Author
-<<<<<<< HEAD
-Created by Csilla Toth Reach out to me on LinkedIn or GitHub for feedback or collaboration!
-=======
-Created by [Your Name]. Reach out to me on LinkedIn or GitHub for feedback or collaboration!
-
-
-
-
-
-
->>>>>>> d02d7279aa25675c7994dfa3e3853fcae1e1524b
+Created by Csilla Toth. Reach out to me on LinkedIn or GitHub for feedback or collaboration!
