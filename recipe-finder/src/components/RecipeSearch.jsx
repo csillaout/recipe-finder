@@ -8,6 +8,7 @@ const RecipeSearch = () => {
   const { addRecipe } = useSavedRecipes();
   const [query, setQuery] = useState("");
   const [recipes, setRecipes] = useState([]);
+  const [message, setMessage] = useState(""); // For feedback to the user
 
   const handleSearch = async (event) => {
     event.preventDefault();
@@ -18,6 +19,27 @@ const RecipeSearch = () => {
       setRecipes(response.data);
     } catch (error) {
       console.error("Error fetching recipes:", error);
+    }
+  };
+
+  const saveRecipe = async (recipe) => {
+    try {
+      const response = await axios.post(
+        `http://localhost:8000/save-recipe/`,
+        recipe,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      if (response.status === 200) {
+        setMessage("Recipe saved successfully!");
+        addRecipe(recipe); // Update the saved recipes context
+      }
+    } catch (error) {
+      console.error("Error saving recipe:", error);
+      setMessage("Failed to save the recipe. It may already be saved.");
     }
   };
 
@@ -32,8 +54,8 @@ const RecipeSearch = () => {
         />
         <button type="submit">Search</button>
       </form>
-
-      <div class="main">
+      {message && <p>{message}</p>} {/* Display success/error messages */}
+      <div className="main">
         {recipes.length > 0 ? (
           <ul>
             {recipes.map((recipe) => (
@@ -41,7 +63,7 @@ const RecipeSearch = () => {
                 <h3>{recipe.title}</h3>
                 {recipe.image && <img src={recipe.image} alt={recipe.title} />}
                 <Link to={`/recipe/${recipe.id}`}>More Info</Link>
-                <button onClick={() => addRecipe(recipe)}>
+                <button onClick={() => saveRecipe(recipe)}>
                   Add to Saved Recipes
                 </button>
               </li>

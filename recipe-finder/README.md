@@ -41,6 +41,11 @@ npm start
 The frontend will be available at http://localhost:3000.
 📂 Project Structure
 
+Start the app:
+activate the env: source venv/bin/activate
+start back end: uvicorn app:app --reload
+start front end(cd recipe-finder)npm start
+
 recipe-finder/
 ├── backend/
 │ ├── main.py # FastAPI backend application
