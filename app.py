@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Query, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import requests
+import secret
 
-API_KEY = "c8df84396b0c4259acb0291783441d69"
 
 app = FastAPI()
 
@@ -22,7 +22,7 @@ def get_recipes(query: str = Query(..., min_length=1)):
     """
     url = f"https://api.spoonacular.com/recipes/complexSearch"
     params = {
-        "apiKey": API_KEY,
+        "apiKey": secret.API_KEY,
         "query": query,
         "number": 10,
         "instructionsRequired": True,
@@ -38,7 +38,7 @@ def get_recipe(recipe_id: int):
     Fetch detailed information for a specific recipe.
     """
     url = f"https://api.spoonacular.com/recipes/{recipe_id}/information"
-    params = {"apiKey": API_KEY}
+    params = {"apiKey": secret.API_KEY}
     response = requests.get(url, params=params)
     if response.status_code == 200:
         return response.json()
