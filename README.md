@@ -21,7 +21,7 @@ Frontend
 React: Frontend framework for building user interfaces.
 CSS: For styling the application.
 🖥️ Installation and Setup
-
+run pip install -r requirements.txt
 Backend
 Clone the repository:
 git clone https://github.com/your-username/recipe-finder.git
@@ -55,19 +55,20 @@ recipe-finder/
 │ │ └── ...
 │ └── package.json # Frontend dependencies
 =======
-│   ├── main.py                # FastAPI backend application
-│   ├── requirements.txt       # Backend dependencies
-│   └── ...
+│ ├── main.py # FastAPI backend application
+│ ├── requirements.txt # Backend dependencies
+│ └── ...
 ├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/        # React components
-│   │   ├── App.js             # Main React app
-│   │   └── ...
-│   └── package.json           # Frontend dependencies
->>>>>>> d02d7279aa25675c7994dfa3e3853fcae1e1524b
-└── README.md
-🔑 API Keys
+│ ├── public/
+│ ├── src/
+│ │ ├── components/ # React components
+│ │ ├── App.js # Main React app
+│ │ └── ...
+│ └── package.json # Frontend dependencies
+
+> > > > > > > d02d7279aa25675c7994dfa3e3853fcae1e1524b
+> > > > > > > └── README.md
+> > > > > > > 🔑 API Keys
 
 This app uses the Spoonacular API for fetching recipe data.
 
@@ -99,13 +100,14 @@ allow_headers=["*"],
 )
 
 =======
-    CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Adjust as needed
-    allow_methods=["*"],
-    allow_headers=["*"],
+CORSMiddleware,
+allow_origins=["http://localhost:3000"], # Adjust as needed
+allow_methods=["*"],
+allow_headers=["*"],
 )
->>>>>>> d02d7279aa25675c7994dfa3e3853fcae1e1524b
-🙌 Contributions
+
+> > > > > > > d02d7279aa25675c7994dfa3e3853fcae1e1524b
+> > > > > > > 🙌 Contributions
 
 Contributions are welcome! Feel free to submit a pull request or open an issue to suggest features or report bugs.
 
@@ -119,9 +121,4 @@ Created by Csilla Toth Reach out to me on LinkedIn or GitHub for feedback or col
 =======
 Created by [Your Name]. Reach out to me on LinkedIn or GitHub for feedback or collaboration!
 
-
-
-
-
-
->>>>>>> d02d7279aa25675c7994dfa3e3853fcae1e1524b
+> > > > > > > d02d7279aa25675c7994dfa3e3853fcae1e1524b

@@ -15,6 +15,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/healthz")
+async def health_check():
+    return {"status": "ok"}
+
+
 @app.get("/recipes")
 def get_recipes(query: str = Query(..., min_length=1)):
     """

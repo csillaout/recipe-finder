@@ -48,7 +48,7 @@ start front end(cd recipe-finder)npm start
 
 recipe-finder/
 ├── backend/
-│ ├── main.py # FastAPI backend application
+│ ├── app.py # FastAPI backend application
 │ ├── requirements.txt # Backend dependencies
 │ └── ...
 ├── frontend/
