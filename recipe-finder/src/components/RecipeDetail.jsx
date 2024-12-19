@@ -6,7 +6,6 @@ import "./RecipeDetail.css"; // Import the CSS file
 const RecipeDetail = () => {
   const { id } = useParams();
   const [recipe, setRecipe] = useState(null);
-
   useEffect(() => {
     const fetchRecipe = async () => {
       try {
@@ -16,10 +15,8 @@ const RecipeDetail = () => {
         console.error("Error fetching recipe details:", error);
       }
     };
-
     fetchRecipe();
   }, [id]);
-
   if (!recipe) {
     return <p>Loading...</p>;
   }
@@ -44,5 +41,4 @@ const RecipeDetail = () => {
     </div>
   );
 };
-
 export default RecipeDetail;

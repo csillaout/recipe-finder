@@ -10,7 +10,7 @@ import RecipeDetail from "./components/RecipeDetail";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
-import { SavedRecipes } from "./components/SavedRecipes";
+import SavedRecipes from "./components/SavedRecipes";
 
 import { SavedRecipesProvider } from "./components/SavedRecipesContext";
 
