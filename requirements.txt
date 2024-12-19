@@ -1,0 +1,5 @@
+fastApi
+requests
+uvicorn
+react
+axios
