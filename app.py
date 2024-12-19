@@ -15,9 +15,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/healthz")
-async def health_check():
-    return {"status": "ok"}
+
+
+@app.get("/")
+async def read_root():
+    return {"message": "Hello, Render! The service is running."}
 
 
 @app.get("/recipes")
